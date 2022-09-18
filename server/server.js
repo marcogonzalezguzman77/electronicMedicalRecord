@@ -18,6 +18,27 @@ const server = new ApolloServer({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+
+
+// --------------------------deployment------------------------------
+const __dirname = path.resolve();
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/client/build")));
+
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  );
+} else {
+  app.get("/", (req, res) => {
+    res.send("API is running..");
+  });
+}
+// --------------------------deployment------------------------------
+
+
+
+/*
 if (process.env.NODE_ENV === 'production') {
   //console.log('im in production mode')
   //app.use(express.static(path.join(__dirname, '../client/build')));
