@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [
  {
     "name": "Omar",
@@ -45,52 +44,4 @@
     "bloodgroup": "O-",
     "phone": "2353930155"
 }
-=======
-[
- {
-    "name": "Omar",
-    "lastname": "Ortega",    
-    "dob": "08/12/1949",
-    "officialID": "OMOR491208HCHSBR02",        
-    "email": "omar.ortega@hotmail.com",
-    "bloodgroup": "O-",
-    "phone": "8123340275"
-  },
-  {
-    "name": "Rogelio",
-    "lastname": "Soberano",    
-    "dob": "11/05/1982",
-    "officialID": "ROSO820523HPBYNL03",   
-    "email": "rogelio.soberano@hotmail.com",
-    "bloodgroup": "O-",
-    "phone": "82237275"
-},
-{
-    "name": "Monica",
-    "lastname": "Campillo",    
-    "dob": "08/12/1959",
-    "officialID": "MOCA820523HPBYNL03",    
-    "email": "monica.campillo@hotmail.com",
-    "bloodgroup": "O-",
-    "phone": "2343340274"
-},
-{
-    "name": "Alejadra",
-    "lastname": "Teresa",    
-    "dob": "04/04/1967",
-    "officialID": "ALTE670430MJLSTN01",   
-    "email": "alejandra.teresa@hotmail.com",
-    "bloodgroup": "O-",
-    "phone": "2323680015"
-},
-{
-    "name": "Mireya",
-    "lastname": "Prince",    
-    "dob": "08/07/1985",
-    "officialID": "MIPR850708HTXLZL01",   
-    "email": "mireya.prince@hotmail.com",
-    "bloodgroup": "O-",
-    "phone": "2353930155"
-}
->>>>>>> abda662c57dad32b13ddb96ff3e2dfd86a6b08c2
 ]
