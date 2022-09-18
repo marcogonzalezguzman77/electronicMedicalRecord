@@ -1,0 +1,32 @@
+[
+{
+    "name": "Juan Antonio",
+    "lastname": "Lara Glz",    
+    "dob": "02/20/1993",
+    "specialty": "Cirugia Plastica",
+    "licenseid": "1234567",         
+    "email": "juan.lara@clinicalaraglz.com",
+    "username": "juanLara93",
+    "password": "$2b$10$evHG/NyfM0tujWaPrdLrcO8ffNM6VjvK8CSYnFhHY.mgylb104z.."
+},
+{
+    "name": "Alberto",
+    "lastname": "Lara Glz",    
+    "dob": "04/05/1996",
+    "specialty": "Maxilofacial",
+    "licenseid": "89101112",   
+    "email": "alberto.lara@clinicalaraglz.com",
+    "username": "betoLara96",
+    "password": "$2b$10$evHG/NyfM0tujWaPrdLrcO8ffNM6VjvK8CSYnFhHY.mgylb104z.."
+},
+{
+    "name": "Adrian Eliseo",
+    "lastname": "Soto Fernandez",    
+    "dob": "11/01/1977",
+    "specialty": "Cirugia Pediatrica",
+    "licenseid": "13141516",    
+    "email": "adrian.soto@clinicalaraglz.com",
+    "username": "adrianSoto77",
+    "password": "$2b$10$evHG/NyfM0tujWaPrdLrcO8ffNM6VjvK8CSYnFhHY.mgylb104z.."    
+}
+]
