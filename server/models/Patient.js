@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const { Schema, model } = require('mongoose');
 
 // Schema to create User model
@@ -42,3 +43,49 @@ const patientSchema = new Schema(
 const Patient = model('patient', patientSchema);
 
 module.exports = Patient;
+=======
+const { Schema, model } = require('mongoose');
+
+// Schema to create User model
+const patientSchema = new Schema(
+  {
+    name: { type: String, required: true, trim: true },
+    lastname: { type: String, required: true, trim: true },
+    dob: { type: Date, required: true, trim: true },
+    officialID: { type: String, unique: true, required: true, trim: true },
+    email: {
+      type: String,
+      unique: true,
+      required: true,
+      /* validate: [validateEmail, 'Please fill a valid email address'],*/
+      match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
+    },
+    bloodgroup: { type: String, required: false, trim: true },
+    phone: { type: String, required: false, trim: true },
+    createdAt: { type: Date, default: Date.now },
+
+    //one patient has some medical records
+    medicalrecords: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'medicalrecord',
+      },
+    ],
+
+    //One patient could be access for some users
+    users: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'user',
+      },
+    ],
+
+
+
+  }
+);
+
+const Patient = model('patient', patientSchema);
+
+module.exports = Patient;
+>>>>>>> abda662c57dad32b13ddb96ff3e2dfd86a6b08c2

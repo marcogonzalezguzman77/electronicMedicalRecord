@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
     {
     "medicalstory": "No ha presentado dolores anteriormente",
@@ -55,4 +56,63 @@
     "treatment_prescription": "Vics en el pecho y Dioxido de cloro: 1 servida cada 8 horas por 5 días ",
     "orderofstudies": "Radiografia de torax"
   }
+=======
+[
+    {
+    "medicalstory": "No ha presentado dolores anteriormente",
+    "currentcondition": "Dolor de cabeza",
+    "physicalexploration": "Inflamación en la frente",
+    "diagnostic": "Contusión",
+    "treatment_prescription": "Hielos en la cabeza y Paracetamol: 2 pastillas cada 30 minutos por 7 días ",
+    "orderofstudies": "Radiografia de cerebro"
+  },
+  {
+    "medicalstory": "Migrañas constantes",
+    "currentcondition": "Dolor de cabeza",
+    "physicalexploration": "Sudoración y Fiebre",
+    "diagnostic": "Estrés",
+    "treatment_prescription": "Paracetamol: 2 pastillas cada 30 minutos por 7 días ",
+    "orderofstudies": "Asistir al Psicologo"
+  },
+  {
+    "medicalstory": "Fractura brazo en 1996",
+    "currentcondition": "Dolor de codo",
+    "physicalexploration": "Se observa codo inflamado",
+    "diagnostic": "Lucsación en codo",
+    "treatment_prescription": "Hielos en la codo y Paracetamol: 2 pastillas cada 30 minutos por 7 días ",
+    "orderofstudies": "Radiografia de brazo"
+  },
+  {
+    "medicalstory": "Dolores constantes en el último mes",
+    "currentcondition": "Dolor de estómago",
+    "physicalexploration": "Movimiento involuntario interno en zona lumbar",
+    "diagnostic": "Lombrices",
+    "treatment_prescription": "Bacteriobam: 1 pastilla al día por 7 días, Penicilina: 2 tabletas cada 8 horas por 5 días y Paracetamol: 2 pastillas cada 10 minutos por 20 días ",
+    "orderofstudies": "Análisis de heces en laboratorio" 
+  },
+  {
+    "medicalstory": "Dolor en las zonas blandas al caminar durante dos dias",
+    "currentcondition": "Dolor testicular",
+    "physicalexploration": "Enrojecimiento en la zona pélvica e hinchazón testicular",
+    "diagnostic": "Huevo torcido",
+    "treatment_prescription": "Vics en los testículos y Paracetamol: 2 pastillas cada 30 minutos por 7 días ",
+    "orderofstudies": "Ninguno" 
+  },
+  {
+    "medicalstory": "Empezo dolor despues de mojarse en la lluvia",
+    "currentcondition": "Dolor de garganta",
+    "physicalexploration": "Inflamación de garganta",
+    "diagnostic": "Neumonia",
+    "treatment_prescription": "Penicilina: 2 tabletas al día por 7 días y Paracetamol: 2 pastillas cada 30 minutos por 7 días ",
+    "orderofstudies": "Ninguno" 
+  },
+  {
+    "medicalstory": "Salidas constantes durante pandemia",
+    "currentcondition": "Dolor de cabeza, fiebre y dificultad para respirar",
+    "physicalexploration": "Fiebre, ruidos al respirar",
+    "diagnostic": "Covid19",
+    "treatment_prescription": "Vics en el pecho y Dioxido de cloro: 1 servida cada 8 horas por 5 días ",
+    "orderofstudies": "Radiografia de torax"
+  }
+>>>>>>> abda662c57dad32b13ddb96ff3e2dfd86a6b08c2
 ]
