@@ -29,22 +29,25 @@ app.use(express.json());
 //const __dirname = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/build")));
+  app.use(express.static(path.join(__dirname, "./client/build")));
 
   app.get("*", (req, res) =>
-    res.sendFile(path.join(__dirname,'../client/build/index.html'))
+    res.sendFile(path.join(__dirname,'./client/build/index.html'))
   );
 } else {
+  console.log('inside else NODE_ENV === production')
   app.get("/", (req, res) => {
     res.send("API is running..");
   });
 }
 
+/*
 app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.get("*", (req, res) =>
   res.sendFile(path.join(__dirname,'../client/build/index.html'))
 );
+*/
 
 // --------------------------deployment------------------------------
 
