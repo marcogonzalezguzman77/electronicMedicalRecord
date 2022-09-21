@@ -27,12 +27,12 @@ app.use(express.json());
 
 // --------------------------deployment------------------------------
 //const __dirname = path.resolve();
-/*
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
 
   app.get("*", (req, res) =>
-    res.sendFile(path.join(__dirname,'../client/build/index.html'))
+    res.sendFile(path.resolve(__dirname,'../client/build','index.html'))
   );
 } else {
   console.log('inside else NODE_ENV === production')
@@ -40,8 +40,8 @@ if (process.env.NODE_ENV === "production") {
     res.send("API is running..");
   });
 }
-*/
 
+/*
 app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.get("*", (req, res) =>
@@ -51,6 +51,7 @@ app.get("*", (req, res) =>
 console.log('__dirname',__dirname);
 console.log('path.join',path.join(__dirname, "../client/build"));
 console.log('path.resolve',path.resolve(__dirname, '../client/build', 'index.html'));
+*/
 
 // --------------------------deployment------------------------------
 
