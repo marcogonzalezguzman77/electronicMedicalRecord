@@ -4,6 +4,8 @@ import { ADD_USER } from '../../utils/mutations';
 import { QUERY_addUSERS } from '../../utils/queries';
 import { Form, Button, Alert, Row, Col, Card } from 'react-bootstrap';
 
+import Auth from '../utils/auth';
+
 const UserForm = () => {
   
   const [show, setShow] = useState(false);
@@ -102,8 +104,9 @@ const [addUser, { error }] = useMutation(ADD_USER, {
             }
         );*/
 
-        console.log('data',data);  
-        window.location.replace('/me');
+        //console.log('data',data);  
+        Auth.login(data.addUser.token);
+        window.location.replace('/dashboard');
         
       } catch (err) {
         console.error(err);
