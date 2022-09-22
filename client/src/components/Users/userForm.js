@@ -103,7 +103,7 @@ const [addUser, { error }] = useMutation(ADD_USER, {
         );*/
 
         console.log('data',data);  
-        
+        window.location.replace('/me');
         
       } catch (err) {
         console.error(err);
