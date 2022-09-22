@@ -4,7 +4,7 @@ import { ADD_USER } from '../../utils/mutations';
 import { QUERY_addUSERS } from '../../utils/queries';
 import { Form, Button, Alert, Row, Col, Card } from 'react-bootstrap';
 
-import Auth from '../utils/auth';
+import Auth from '../../utils/auth';
 
 const UserForm = () => {
   
