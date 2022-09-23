@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert, Row, Col, Card } from 'react-bootstrap';
 import { useMutation } from '@apollo/client';
-import Auth from '../../utils/auth';
+//import Auth from '../../utils/auth';
 import { ADD_USER } from '../../utils/mutations';
+//import { LOGIN_USER } from '../../utils/mutations';
+
 
 const SingUp = () => {
     // Create state variables for the fields in the form
@@ -19,6 +21,7 @@ const SingUp = () => {
         licenseid: ''
     });
     const [addUser, { error }] = useMutation(ADD_USER);
+    //const [login, { errorLogin, dataLogin }] = useMutation(LOGIN_USER);
 
     const handleInputChange = (event) => {
         // Getting the value and name of the input which triggered the change
@@ -39,9 +42,22 @@ const SingUp = () => {
             const { data } = await addUser({
                 variables: { ...formState }
             });
-            console.log(data);
-            Auth.login(data.addUser.token);
-            //alert(`Welcome ${data.addUser.username}`);
+            //console.log(data);
+            //Auth.login(data.addUser.token);
+           /* console.log(formState);
+            console.log('formstate.email',formState.email);
+            console.log('formstate.password',formState.password);
+            const { dataLogin } = await login({
+                variables: { email: formState.email, password: formState.password},
+              });
+            console.log('data',data);
+           // console.log('dataLogin',dataLogin);
+            */
+           alert(`Welcome ${data.addUser.user.username} you need to login`);        
+           window.location.replace('/login');
+    
+           //Auth.login(data.addUser.token);
+
         } catch (e) {
             console.log(e);
         }

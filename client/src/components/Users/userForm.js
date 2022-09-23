@@ -79,8 +79,12 @@ const [addUser, { error }] = useMutation(ADD_USER, {
         const { data } = await addUser({
           variables: { name, lastname, dob, email, licenseid, specialty, username, password },
         });
+        alert('inside handle form submit');
+        //console.log('data token',data.addUser.token);  
+        Auth.login(data.addUser.token);
+        window.location.replace('/me');
 
-        setName('');
+       /* setName('');
         setLastName('');   
         setDob('');  
         setEmail('');
@@ -88,7 +92,7 @@ const [addUser, { error }] = useMutation(ADD_USER, {
         setSpecialty('');
         setUsername('');
         setPassword('');
-
+*/
 
         /*
         setFormState(
@@ -104,9 +108,8 @@ const [addUser, { error }] = useMutation(ADD_USER, {
             }
         );*/
 
-        //console.log('data',data);  
-        Auth.login(data.addUser.token);
-        window.location.replace('/dashboard');
+       
+        //window.location.replace('/dashboard');
         
       } catch (err) {
         console.error(err);

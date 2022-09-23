@@ -50,7 +50,8 @@ const resolvers = {
     Mutation: {
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
-
+            console.log('email',email);
+            console.log('password',password);
             if (!user) {
                 throw new AuthenticationError('No user with this email found!');
             }
@@ -87,9 +88,9 @@ const resolvers = {
                 password
             })
 
-            //const token = signToken(user);
+            const token = signToken(user);
 
-            return user;
+            return {token, user };
         },
 
 

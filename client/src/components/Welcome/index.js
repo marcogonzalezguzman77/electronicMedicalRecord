@@ -14,7 +14,7 @@ const Welcome = () => {
 
         <div className="flex-row justify-center">
           <div className="col-12 col-md-10 my-3">
-          <h1>{Auth.getProfile().data.name}'s page</h1>
+          <h1>{Auth.getProfile().data.username}'s page</h1>
           <h2>This is the Home Route.</h2>          
           </div>
 

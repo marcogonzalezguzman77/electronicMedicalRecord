@@ -8,6 +8,10 @@ const Header = () => {
     event.preventDefault();
     Auth.logout();
   };
+  //console.log('hello ');
+  //const profileData = Auth.getProfile().data;
+  //console.log(JSON.stringify(profileData));
+
   return (
     <header className="text-dark p-3 palign-center" style={{backgroundColor:'#004173'}}>
     <div className="container text-center" style={{color:'white'}}>
@@ -17,9 +21,9 @@ const Header = () => {
               <p className="m-0">Your patients everywhere!</p>
             </div>
             <div className="col col-lg-6 col-md-6">
-              {Auth.loggedIn() ? (
+              {Auth.loggedIn() ? (                  
                     <>
-                    <div className="float-left m-2">
+                    <div className="float-left m-2">                     
                       {Auth.getProfile().data.name}'s profile
                     </div>
                       {/*}  <Link className="btn btn-lg btn-primary m-2" to="/me">
